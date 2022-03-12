@@ -94,7 +94,8 @@ client.on("interactionCreate", async (interaction) => {
 
 
             interaction.reply({ embeds: [new MessageEmbed().setTitle('This ticket will be deleted in 5 seconds.').setColor("RED")]})
-            const transcript = await client.channels.cache.get(ee["ticket-transcript"]).send({ content: `${ee.domain}/direct?url=${transcript.attachments.first().url}`, files: [attachment] })
+            const transcript = await client.channels.cache.get(ee["ticket-transcript"]).send({ files: [attachment] })
+            client.channels.cache.get(ee["ticket-transcript"]).send({ content: `${ee.domain}/direct?url=${transcript.attachments.first().url}` })
             console.log(`${ee.domain}/direct?url=${transcript.attachments.first().url}`);
             interaction.channel.delete()
         }
