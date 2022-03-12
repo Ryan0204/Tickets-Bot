@@ -11,8 +11,9 @@ module.exports = {
      * @param {String[]} args
      */
     run: async (client, message, args) => {
-        if(message.author.permissions.has(Permissions.FLAGS.ADMINISTRATOR)) {
-            message.channek.send({ content: 'Sorry but you don\'t have permission to run this commands'})
+        if(!message.member.permissions.has(Permissions.FLAGS.ADMINISTRATOR)) {
+            message.channel.send({ content: 'Sorry but you don\'t have permission to run this commands'})
+            return;
         } 
         const panelEmbed = new MessageEmbed()
             .setTitle(ee["ticket-title"])
