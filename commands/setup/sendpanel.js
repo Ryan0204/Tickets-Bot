@@ -1,5 +1,6 @@
 const { Message, Client, MessageEmbed } = require("discord.js");
 const { MessageActionRow, MessageButton } = require('discord.js');
+const { Permissions } = require('discord.js');
 const ee = require('../../ticketconfig.json');
 module.exports = {
     name: "panel",
@@ -10,6 +11,9 @@ module.exports = {
      * @param {String[]} args
      */
     run: async (client, message, args) => {
+        if(message.author.permissions.has(Permissions.FLAGS.ADMINISTRATOR)) {
+            message.channek.send({ content: 'Sorry but you don\'t have permission to run this commands'})
+        } 
         const panelEmbed = new MessageEmbed()
             .setTitle(ee["ticket-title"])
             .setDescription(ee["ticket-decs"])
