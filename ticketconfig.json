@@ -1,0 +1,18 @@
+{
+    "ticket-title": "**Need Help?**",
+    "ticket-decs": "Click below button to create a ticket 🎫",
+    "button-style": "SUCCESS",
+    "ticket-prefix": "ticket-",
+    "embed-footer-text": "Made by RyanChan#0204",
+    "embed-footer-url": "https://imgur.com/QrHq2pG.png",
+    "embed-color": "YELLOW",
+    "embed-color-close": "RED",
+    
+    "opened-ticket-title": "Ticket Support",
+    "opened-ticket-decs": "Hello, how may i help you today?\nType you question here so that our support team can help you quickly.",
+
+    "ticket-category": "950593657285783582",
+    "ticket-transcript": "950593656140726272",
+
+    "domain": "http://localhost:8080"
+}
