@@ -7,7 +7,7 @@
 
 ## 📝 Tutorial
 
-Getting Start [Tutorial](https://ticketsbot.rocketdev.host)
+Getting Start [Tutorial](https://ticketsbot.rocketdev.xyz)
 
 ## 📝 [Support Server](https://discord.gg/XBnRvZaHcc)
 
