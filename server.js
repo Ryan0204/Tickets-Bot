@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express()
 const colors = require('colors');
-
+const ee = require('./ticketconfig.json')
 const fetch = require('node-fetch')
 
 app.get('/direct', (req, res) => {
@@ -14,7 +14,7 @@ fetch(req.query.url, { headers: { 'Accept-Encoding': 'utf8' } })
 
 })
 
-app.listen(8080, console.log('[Tickets]'.green, 'App listen in port 8080'));
+app.listen(ee.port, console.log('[Tickets]'.green, `App listen in port ${ee.port}`));
 
 
 /**********************************************************

@@ -14,5 +14,6 @@
     "ticket-category": "950593657285783582",
     "ticket-transcript": "950593656140726272",
 
-    "domain": "http://localhost:8080"
+    "domain": "http://localhost:8080",
+    "port": "8080"
 }
