@@ -17,6 +17,4 @@ If you have major coding issues with this bot, please join and ask for help.
 
 [![Run on Repl.it](https://replit.com/badge/github/DiscordBot/DiscordTickets)](https://repl.it/github/Ryan0204/Tickets-Bot)
 
-[Run on RocketHost 🚀 **RECOMMANDED**](https://login.rocketdev.host)
-
 Made with :heart: and JavaScript!
